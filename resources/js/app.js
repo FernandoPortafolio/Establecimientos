@@ -9,6 +9,7 @@ require('./bootstrap')
 window.Vue = require('vue').default
 
 import router from './router'
+import store from './store'
 
 // Leaflet
 import 'leaflet/dist/leaflet.css'
@@ -35,6 +36,7 @@ Vue.component('app', require('./pages/App.vue').default)
 const app = new Vue({
     el: '#app',
     router,
+    store,
 })
 
 require('./mapa')
